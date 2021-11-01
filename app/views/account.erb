@@ -1,5 +1,12 @@
 <h1>Welcome</h1>
 
 <p>We are currently working on your account.</p>
+<% # binding.pry %>
+
+Balance: <%= current_user.balance %>
+<form action="/account" method="post">
+    Deposit/Withdraw: <input type="string" name="change">
+    <input type="submit">
+</form>
 
 <p><a href="/logout">Log Out</a></p>
